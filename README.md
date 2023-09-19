@@ -84,6 +84,17 @@ GET http://localhost:8000/list_files/files/e
 # Shutdown
 The server can be gracefully shut down by sending a SIGINT signal (Ctrl+C).
 
+# Test cases:
+There's few test cases that oyou can run. 
+-  Install pytest
+```bash
+pip install pytest
+```
+-  Run the test cases
+```bash
+pytest test_cases.py
+```
+
 # Customization
 You can customize the folder_path variable in the code to specify the folder where files are managed.
 The valid_file_types list can be modified to define valid file extensions for filtering.
