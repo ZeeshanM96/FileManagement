@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "420354f5-e315-4e2f-ad2e-309ea66d4581",
+		"name": "Kambi_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29806814"
+	},
+	"item": [
+		{
+			"name": "filter_files_by_type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/filter_files_by_type/files/png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"filter_files_by_type",
+						"files",
+						"png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_all_files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/list_files/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"list_files",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "first_n_files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/list_files/files?count=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"list_files",
+						"files"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter_files_by_char",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/filter_files/files/e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"filter_files",
+						"files",
+						"e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter_files_by_size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/order_files_by_size/files/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order_files_by_size",
+						"files",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
