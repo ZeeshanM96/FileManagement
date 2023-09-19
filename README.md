@@ -95,9 +95,6 @@ pip install pytest
 pytest test_cases.py
 ```
 
-# Customization
-You can customize the folder_path variable in the code to specify the folder where files are managed.
-The valid_file_types list can be modified to define valid file extensions for filtering.
 
 # Contributing
 Feel free to contribute to this project by opening issues or creating pull requests. I welcome your suggestions and improvements.
